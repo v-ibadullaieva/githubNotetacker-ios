@@ -129,7 +129,6 @@ class Notes extends Component {
 Notes.propTypes = {
   userInfo: PropTypes.object.isRequired,
   notes: PropTypes.object.isRequired
-  // notes: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
 };
 
 export default Notes;

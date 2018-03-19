@@ -19,7 +19,6 @@ export const getNotes = username => {
   const url = `https://github-saver-8f0b4.firebaseio.com/${username}.json?auth=${
     Config.REACT_NATIVE_FIREBASE_KEY
   }`;
-  // const url = `https://github-saver-8f0b4.firebaseio.com/${username}.json?auth=${REACT_NATIVE_FIREBASE_KEY}`;
 
   return fetch(url).then(res => res.json());
 };
@@ -29,7 +28,6 @@ export const addNote = (username, note) => {
   const url = `https://github-saver-8f0b4.firebaseio.com/${username}.json?auth=${
     Config.REACT_NATIVE_FIREBASE_KEY
   }`;
-  // const url = `https://github-saver-8f0b4.firebaseio.com/${username}.json?auth=${REACT_NATIVE_FIREBASE_KEY}`;
   return fetch(url, {
     method: 'post',
     body: JSON.stringify(note)
